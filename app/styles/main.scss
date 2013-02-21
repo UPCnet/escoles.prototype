@@ -1,11 +1,675 @@
 @import "bootstrap";
 @import "responsive";
 
-.hero-unit h1 { font-size: 50px;}
+/* Estils pàgina login */
 
-header {
-    color:green;
-    h1 {
-        color:black;
-    }
+#header {
+	background-image: url(../images/caixa_escola.png);    
+	height: 126px;
+}
+
+.logo_escola {
+	background-color: white;
+	color:  #FF330D;
+	margin-top: 20px;	
+}
+
+.caixa_logo {
+	border: 0px !important;
+}
+
+.noticia {
+	background-color: white;
+	margin-bottom: 50px;
+	/* Rotate div */
+	transform:rotate(-1deg);
+	-ms-transform:rotate(-1deg); /* Internet Explorer */
+	-moz-transform:rotate(-1deg); /* Firefox */
+	-webkit-transform:rotate(-1deg); /* Safari and Chrome */
+	-o-transform:rotate(-1deg); /* Opera */
+}
+
+.titol-noticia {
+	color: #E6511E;
+	font-size: 20px;
+}
+
+.text-noticia {
+	font-size: 12px;
+	text-align:justify;
+}
+
+.image-noticia {
+	margin-top: 20px;
+	margin-left: 20px;
+}
+
+.container-login {
+	@extend .container;
+	background-color: #FECC00;
+}
+
+.login {		
+   	background-image: url(../images/caixa_login4.png);  
+   	background-repeat:no-repeat;
+   	height: 300px;
+}	
+
+
+.control-label-login {	
+	float: left;
+	width: 90px;
+	padding-top: 5px;
+	text-align: left;
+	text-transform: uppercase;
+	color: white;
+	margin-left: 65px;
+}
+
+.legend-login {	
+	margin-left: 65px;
+	border-bottom: none;
+	color: white !important;
+	font-size: 30px;
+	line-height: 40px;
+}
+
+.control-group-login {
+	@extend .control-group;
+	margin-bottom: 10px !important;
+}
+
+.legend-login + .control-group-login {
+	margin-top: 0px;
+	-webkit-margin-top-collapse: separate;
+}
+
+.form-horizontal-login {
+	@extend .form-horizontal;
+	padding-top: 60px;
+}
+
+.btn-link-login {
+	@extend .btn-link;	
+	color: white;
+	text-transform: uppercase;
+	padding-right: 0px;
+	padding-top: 0px;	
+	padding-bottom: 0px;
+}
+
+.icon-white-login {
+	@extend .icon-white;
+	color: white;
+}
+
+.controls-submit-login {
+	@extend .controls-submit;
+	width: 100px;
+	margin-left: 310px;
+	margin-top: -5px;
+}
+
+
+
+
+@media (min-width: 978px) and (max-width: 1196px) {
+
+	.login {	
+		@extend .img;
+	   	background-image: url(../images/caixa_login768.png);  
+	   	background-repeat:no-repeat;
+	   	height: 240px;
+	}	
+
+	.form-horizontal-login {
+		padding-top: 45px;
+	}
+
+	.input-login {
+		width: 150px !important;
+		height: 15px !important;
+	}
+
+
+	.legend-login {	
+		margin-left: 55px;
+		border-bottom: none;
+		color: white !important;
+		font-size: 22px;
+		line-height: 25px;
+	}
+
+	.control-label-login {
+		float: left;
+		width: 90px;
+		padding-top: 5px;
+		text-align: left;
+		text-transform: uppercase;
+		color: white;
+		margin-left: 55px;
+	}
+
+	.form-horizontal-login .controls {
+		margin-left: 160px;
+	}
+
+
+	.control-group-login {
+		margin-bottom: 10px !important;
+	}
+
+	.controls-submit-login {
+		width: 100px;
+		margin-left: 238px;
+		margin-top: -10px;
+	}
+
+	.legend-login + .control-group-login {
+		margin-top: 5px;
+		-webkit-margin-top-collapse: separate;
+	}
+
+	.image-noticia {
+		margin-top: 50px;
+		margin-left: 10px;
+	}
+
+}
+
+
+@media (max-width: 979px) and (min-width: 768px) {
+
+	.login {	
+		@extend .img;	   
+	   	height: 300px;
+	   	background-image: url(../images/caixa_login768.png);  	
+	   	width: 485px;
+	   	margin-left: 125px;	   	   	
+	}	
+
+	.form-horizontal-login {
+		padding-top: 45px;
+		padding-left: 30px;
+	}
+
+	.input-login {
+		width: 150px !important;
+		height: 15px !important;
+	}
+
+
+	.legend-login {	
+		margin-left: 55px;
+		border-bottom: none;
+		color: white !important;
+		font-size: 22px;
+		line-height: 25px;
+		width: 180px;
+	}
+
+	.control-label-login {
+		float: left;
+		width: 90px;
+		padding-top: 5px;
+		text-align: left;
+		text-transform: uppercase;
+		color: white;
+		margin-left: 55px;
+	}
+
+	.form-horizontal-login .controls {
+		margin-left: 160px;
+	}
+
+
+	.control-group-login {
+		margin-bottom: 10px !important;
+	}
+
+	.controls-submit-login {
+		width: 100px;
+		margin-left: 238px;
+		margin-top: -10px;
+	}
+
+	.legend-login + .control-group-login {
+		margin-top: 5px;
+		-webkit-margin-top-collapse: separate;
+	}
+
+	.image-noticia {
+		margin-top: 50px;
+		margin-left: 10px;
+	}
+}
+
+@media (max-width: 767px) {
+
+	.login {	
+		@extend .img;	
+	   	background-image: none !important;  
+	   	height: auto !important;  
+	}	
+
+	.form-horizontal-login {
+		padding-top: 45px;
+	}
+
+	.input-login {
+		width: 150px !important;
+		height: 15px !important;
+	}
+
+
+	.legend-login {	
+		margin-left: 55px;
+		border-bottom: none;
+		color: white !important;
+		font-size: 22px;
+		line-height: 25px;
+	}
+
+	.control-label-login {
+		float: left;
+		width: 90px;
+		padding-top: 5px;
+		text-align: left;
+		text-transform: uppercase;
+		color: white;
+		margin-left: 55px;
+	}
+
+	.form-horizontal-login .controls {
+		margin-left: 160px;
+	}
+
+
+	.control-group-login {
+		margin-bottom: 10px !important;
+	}
+
+	.controls-submit-login {
+		width: 100px;
+		margin-left: 238px;
+		margin-top: -10px;
+	}
+
+	.legend-login + .control-group-login {
+		margin-top: 5px;
+		-webkit-margin-top-collapse: separate;
+	}
+
+	.image-noticia {
+		margin-top: 50px;
+		margin-left: 10px;
+	}
+
+}
+
+/* Fi estils pàgina login */
+
+/* Estils pàgina home */
+
+/* Dades usuari */ 
+
+.caixa_profile {
+	background-image: url(../images/caixa_profile.png);  
+	background-repeat:no-repeat;	
+	margin-top: 20px;
+}
+
+.imatge-nen {
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.dades-nen {
+	margin-left: 0px !important;
+}
+
+ul.dades {
+	list-style-type: none !important;	
+	vertical-align: bottom;
+	margin-left: 10px;
+	margin-top: 10px;
+	color: white;
+}
+
+ul.dades li {
+	line-height: 25px;
+}
+
+ul.dades li a {
+	color: white;
+}
+
+/* FI Dades usuari */ 
+
+
+/* MENU NAVEGACIO */
+
+.goout {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;	
+	overflow: hidden;	
+	width: 1px;
+}
+.nav {
+	@extend .nav;
+	text-transform: uppercase;
+}
+
+.navbar {
+	@extend .navbar;
+	color:#FF9900 !important;
+	background-color: #FF9900 !important;
+	filter:alpha(opacity=50);
+	-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(opacity=50)';}
+
+
+.navbar-inner {
+	@extend .navbar-inner;
+	background-color: #FF9900;
+	background-image: none;	
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFF2F2F2', GradientType=0);
+	border: none;
+}
+
+.navbar .nav {
+	position: relative;
+	left: 0;
+	display: block;
+	float: left;
+	margin: 0px;
+}
+
+.navbar .nav > li > a {
+  float: none;
+  padding: 10px 15px 10px;
+  color: #777777;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+.ico-home {
+	height: 40px;	
+}
+
+.navbar .nav > li.ico-home > a
+{	
+	padding-top: 5px !important;
+}
+
+/* Menú ELS MEUS CURSOS */
+
+.els-meus-cursos {
+	background-color: #FF6633;
+}
+
+.els-meus-cursos .dropdown-toggle  {
+	@extend .dropdown-toggle;
+	background-color: #FF6633;	
+	color: white !important;
+}
+
+.navbar .nav li.dropdown.els-meus-cursos.open > .dropdown-toggle, 
+.navbar .nav li.dropdown.els-meus-cursos .active > .dropdown-toggle, 
+.navbar .nav li.dropdown.els-meus-cursos.open.active > .dropdown-togglee 
+{
+	background-color: #FF6633 !important;
+	color: #555;
+}
+
+.els-meus-cursos .dropdown-menu, 
+.els-meus-cursos ul.dropdown-menu {
+	background-color: #FF6633;
+}
+
+.els-meus-cursos ul.dropdown-menu > li > a {
+	color: white;
+}
+
+/* Menú NAVEGACIO */
+
+.navegacio {
+	background-color: #339933;		
+}
+
+.navegacio .dropdown-toggle  {
+	@extend .dropdown-toggle;
+	background-color: #339933;	
+	color: white !important;
+}
+
+.navbar .nav li.dropdown.navegacio.open > .dropdown-toggle, 
+.navbar .nav li.dropdown.navegacio .active > .dropdown-toggle, 
+.navbar .nav li.dropdown.navegacio.open.active > .dropdown-togglee 
+{
+	background-color: #339933 !important;
+	color: #555;
+}
+
+.navegacio .dropdown-menu, 
+.navegacio ul.dropdown-menu {
+	background-color: #339933;
+}
+
+.navegacio ul.dropdown-menu > li > a {
+	color: white;
+}
+
+/* Menú ARRANJAMENTS */
+
+.arranjaments {
+	background-color: #990066;		
+}
+
+.arranjaments .dropdown-toggle  {
+	@extend .dropdown-toggle;
+	background-color: #990066;	
+	color: white !important;
+}
+
+.navbar .nav li.dropdown.arranjaments.open > .dropdown-toggle, 
+.navbar .nav li.dropdown.arranjaments .active > .dropdown-toggle, 
+.navbar .nav li.dropdown.arranjaments.open.active > .dropdown-togglee 
+{
+	background-color: #990066 !important;
+	color: #555;
+}
+
+.arranjaments .dropdown-menu, 
+.arranjaments ul.dropdown-menu {
+	background-color: #990066;
+}
+
+.arranjaments ul.dropdown-menu > li > a {
+	color: white;
+}
+
+
+/* Menú EL MEU PERFIL */
+
+.el-meu-perfil {
+	background-color: #0066CC;		
+}
+
+.el-meu-perfil .dropdown-toggle  {
+	@extend .dropdown-toggle;
+	background-color: #0066CC;	
+	color: white !important;
+}
+
+.navbar .nav li.dropdown.el-meu-perfil.open > .dropdown-toggle, 
+.navbar .nav li.dropdown.el-meu-perfil .active > .dropdown-toggle, 
+.navbar .nav li.dropdown.el-meu-perfil.open.active > .dropdown-togglee 
+{
+	background-color: #0066CC !important;
+	color: #555;
+}
+
+.el-meu-perfil .dropdown-menu, 
+.el-meu-perfil ul.dropdown-menu {
+	background-color: #0066CC;
+}
+
+.el-meu-perfil ul.dropdown-menu > li > a {
+	color: white;
+}
+
+/* FI MENU NAVEGACIO */
+
+#benvingut {	
+	background-color: white;	
+}
+
+
+/* Navegació menú dreta */
+
+.nav-dreta {
+	background-color: #FF6633;	
+}
+
+.nav-tabs.nav-stacked.nav-dreta  > li > a {
+	color:white
+}
+
+.nav-tabs.nav-stacked.nav-dreta  > li > a:hover, 
+.nav-tabs.nav-stacked.nav-dreta  > li > a:focus {
+	border-color: #FF9900;
+	z-index: 2;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+	text-decoration: none;
+	background-color: #FF9900;
+}
+
+/* Fi navegació menú dreta */
+
+.portlet-actualitat .header {
+	background-color: #0066CC;
+	color: white;
+	text-transform: uppercase;
+	margin-bottom: 0px;
+}
+
+.portlet-actualitat .title {
+	background-color: #0066CC;
+	color: white;
+	text-transform: uppercase;
+	margin-bottom: 0px;
+}
+
+.portlet-actualitat  .content {
+	list-style-type: none;
+	margin-left: 0px;
+	margin-bottom: 0px; 
+}
+
+.portlet-noticies {
+	background-color: #f29400;
+}
+
+.title h3 {
+	margin-bottom: 0px;
+}
+
+.noticia-amb-imatge  {
+	background-color: #ff9900;	
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-top: 0px;
+	margin-top: -10px;
+}
+
+.titol-noticia-actualitat {
+	color: white;
+	font-size: 20px;
+}
+
+.text-noticia-actualitat {
+	color: white;
+	font-size: 14px;
+}
+
+.noticia-sense-imatge1 {
+	background-color: #FF6633;	
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-top: 0px;
+	margin-top: -10px;	
+}
+
+.noticia-sense-imatge2 {
+	background-color: #339933;	
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-top: 0px;
+	margin-top: -10px;	
+}
+
+.imatge-separacio {
+	margin-bottom: -60px;
+	width: auto;
+	height: 7px;
+	padding-left: 0px;
+	padding-right: 0px;
+	line-height: 0px;
+}
+
+.imatge-separacio-titol {
+	margin-bottom: -14px;
+	width: auto;
+	height: 7px;
+}
+
+.curs1 {
+ 	background-image: url(../images/caixa1.png);  
+   	background-repeat:no-repeat;
+   	height: 150px;
+   	padding-top: 5px;
+}
+
+.curs2 {
+ 	background-image: url(../images/caixa2.png);  
+   	background-repeat:no-repeat;
+   	height: 150px;
+   	padding-top: 15px;
+}
+
+.curs3 {
+ 	background-image: url(../images/caixa3.png);  
+   	background-repeat:no-repeat;
+   	height: 150px;
+   	padding-top: 5px;
+}
+
+.curs4 {
+ 	background-image: url(../images/caixa4.png);  
+   	background-repeat:no-repeat;
+   	height: 150px;
+   	padding-top: 15px;
+}
+
+.curs h3 {
+	color: white;
+	line-height: 20px;
+	margin-left: 10px;
+}
+
+.curs p {
+	color: white;	
+	margin-left: 10px;
+}
+
+.profesor {
+	margin-bottom: 0px; 
+	margin-top: 20px;
 }
