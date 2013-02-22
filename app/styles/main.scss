@@ -562,6 +562,7 @@ ul.dades li a {
 	color: white;
 	text-transform: uppercase;
 	margin-bottom: 0px;
+	padding-left: 20px;
 }
 
 .portlet-actualitat  .content {
@@ -672,4 +673,87 @@ ul.dades li a {
 .profesor {
 	margin-bottom: 0px; 
 	margin-top: 20px;
+}
+
+a.boto-curs { 
+	text-decoration: none;
+}
+
+/* ESTILS PAGINA CURS */
+
+/* Breadcrumb */
+
+.breadcrumb {
+	padding: 8px 15px;
+	margin: 0px;
+	list-style: none;
+	background-color: white;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+ul.topics {
+	list-style-type: none;
+	margin-left: 0px;
+}
+
+
+ul.topics li .span11 {	
+	margin-left: 0px;	
+}
+
+ul.topics li.active .span12 {
+	background-color: #ffff99 !important;
+}
+
+.titol-curs {
+	color: #FF6633;
+	text-transform: uppercase;
+}
+
+.titol-apartat-curs {
+	color: #FF6633;	
+}
+
+.info-general ul li,  .info-projecte ul li {
+	list-style-type: none;
+}
+
+.info-general ul, .info-projecte ul{
+	margin-left: 0px;
+}
+
+.info-general ul li a, .info-projecte ul li a {
+	color:#333;
+}
+
+.info-general ul li a:hover, .info-projecte ul li a:hover {
+	color:#08C;
+}
+
+.info-general ul li a:active , .info-projecte ul li a:active {
+	color:#08C;
+}
+
+
+.portlet-activitats .header {
+	background-color: #FF6633;
+	color: white;
+	text-transform: uppercase;
+	margin-bottom: 0px;
+}
+
+.portlet-activitats .title {
+	background-color: #FF6633;
+	color: white;
+	text-transform: uppercase;
+	margin-bottom: 0px;
+	padding-left: 20px;
+}
+
+.portlet-activitats  .content {
+	list-style-type: none;
+	margin-left: 0px;
+	margin-bottom: 0px; 
 }
