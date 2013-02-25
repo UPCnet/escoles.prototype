@@ -4,8 +4,27 @@
 /* Estils pàgina login */
 
 #header {
-	background-image: url(../images/caixa_escola.png);    
-	height: 126px;
+	background-image: url(../images/caixa_escola.png);    	
+}
+
+.caixa_profile blockquote {
+	border-left: 0px !important;
+	width: auto !important;
+}
+
+.span3.imatge-nen {
+	width: auto;	
+	float: left;
+}
+
+.span7.dades-nen {
+	width: auto;	
+	float: left;
+}
+
+.caixa_profile .span2 {
+	width: auto;
+	float: left;	
 }
 
 .logo_escola {
@@ -326,6 +345,7 @@
 
 .dades-nen {
 	margin-left: 0px !important;
+	width: auto !important;
 }
 
 ul.dades {
@@ -636,6 +656,7 @@ ul.dades li a {
    	background-repeat:no-repeat;
    	height: 150px;
    	padding-top: 5px;
+   	width: auto;
 }
 
 .curs2 {
@@ -643,6 +664,7 @@ ul.dades li a {
    	background-repeat:no-repeat;
    	height: 150px;
    	padding-top: 15px;
+   	width: auto;
 }
 
 .curs3 {
@@ -650,6 +672,7 @@ ul.dades li a {
    	background-repeat:no-repeat;
    	height: 150px;
    	padding-top: 5px;
+   	width: auto;
 }
 
 .curs4 {
@@ -657,6 +680,7 @@ ul.dades li a {
    	background-repeat:no-repeat;
    	height: 150px;
    	padding-top: 15px;
+   	width: auto;
 }
 
 .curs h3 {
@@ -736,6 +760,11 @@ ul.topics li.active .span12 {
 	color:#08C;
 }
 
+.imatge {
+	align: center;
+}
+
+/* Portlet-activitats */
 
 .portlet-activitats .header {
 	background-color: #FF6633;
@@ -756,4 +785,30 @@ ul.topics li.active .span12 {
 	list-style-type: none;
 	margin-left: 0px;
 	margin-bottom: 0px; 
+}
+
+/* Modificacions Activity */
+
+#maxui-container a:hover {
+	color: #FF6633 !important;
+}
+
+#maxui-container a {
+	color: #FF6633 !important;
+}
+
+#maxui-search {	
+	background: #FF9900 !important;	
+}
+
+.activities .maxui-activity {
+	border-top: 0px !important;
+	border-bottom: 0px !important;
+	background-image: url(../images/separacio-portlet-activitats.png) !important;  
+	background-repeat:no-repeat;
+}
+
+
+#maxui-more-activities input.maxui-button {
+	color: #FF6633 !important;
 }
