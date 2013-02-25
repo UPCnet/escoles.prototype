@@ -199,6 +199,7 @@
 
 @media (max-width: 979px) and (min-width: 768px) {
 
+	
 	.login {	
 		@extend .img;	   
 	   	height: 300px;
@@ -265,6 +266,12 @@
 
 @media (max-width: 767px) {
 
+
+	body {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+
 	.login {	
 		@extend .img;	
 	   	background-image: none !important;  
@@ -282,7 +289,7 @@
 
 
 	.legend-login {	
-		margin-left: 55px;
+		margin-left: 10px;
 		border-bottom: none;
 		color: white !important;
 		font-size: 22px;
@@ -296,11 +303,11 @@
 		text-align: left;
 		text-transform: uppercase;
 		color: white;
-		margin-left: 55px;
+		margin-left: 10px;
 	}
 
 	.form-horizontal-login .controls {
-		margin-left: 160px;
+		margin-left: 125px;
 	}
 
 
@@ -310,7 +317,7 @@
 
 	.controls-submit-login {
 		width: 100px;
-		margin-left: 238px;
+		margin-left: 200px;
 		margin-top: -10px;
 	}
 
@@ -385,18 +392,18 @@ ul.dades li a {
 	@extend .navbar;
 	color:#FF9900 !important;
 	background-color: #FF9900 !important;
-	filter:alpha(opacity=50);
-	-ms-filter:'progid:DXImageTransform.Microsoft.Alpha(opacity=50)';}
+	filter:none;}
 
 
 .navbar-inner {
 	@extend .navbar-inner;
 	background-color: #FF9900;
-	background-image: none;	
+	background-image: none !important;	
 	background-repeat: repeat-x;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFF2F2F2', GradientType=0);
+	filter: none;
 	border: none;
 }
+
 
 .navbar .nav {
 	position: relative;
@@ -654,33 +661,29 @@ ul.dades li a {
 .curs1 {
  	background-image: url(../images/caixa1.png);  
    	background-repeat:no-repeat;
-   	height: 150px;
-   	padding-top: 5px;
-   	width: auto;
+   	height: auto;
+   	padding-top: 5px;   	
 }
 
 .curs2 {
  	background-image: url(../images/caixa2.png);  
    	background-repeat:no-repeat;
-   	height: 150px;
+   	height: auto;
    	padding-top: 15px;
-   	width: auto;
 }
 
 .curs3 {
  	background-image: url(../images/caixa3.png);  
    	background-repeat:no-repeat;
-   	height: 150px;
+   	height: auto;
    	padding-top: 5px;
-   	width: auto;
 }
 
 .curs4 {
  	background-image: url(../images/caixa4.png);  
    	background-repeat:no-repeat;
-   	height: 150px;
+   	height: auto;
    	padding-top: 15px;
-   	width: auto;
 }
 
 .curs h3 {

@@ -156,9 +156,9 @@ input.maxui-button[disabled] {-webkit-appearance: none;border:1px solid #b2b2b2;
 	outline:none;
 }
 	.activities .maxui-avatar img {float:left;}
-	.maxui-avatar img {width:48px;
+	.maxui-avatar img {width:48px; 
 		-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;
-		-moz-box-shadow:0 1px #fff;-webkit-box-shadow:0 1px #fff;box-shadow:0 1px #fff;
+		-moz-box-shadow:0 1px #fff;-webkit-box-shadow:0 1px #fff;box-shadow:0 1px #fff;	
 	}
 
 
