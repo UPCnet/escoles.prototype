@@ -47,10 +47,6 @@ p {
 	background-image: url(../images/caixa_escola.png);    	
 }
 
-.caixa_profile blockquote {
-	border-left: 0px !important;
-	width: auto !important;
-}
 
 .span3.imatge-nen {
 	width: auto;	
@@ -71,10 +67,13 @@ p {
 	background-color: white;
 	color:  #FF330D;
 	margin-top: 20px;	
+	opacity: 0.8;
 }
 
 .caixa_logo {
 	border: 0px !important;
+	padding: 0 0 0 15px;
+	margin: 0 0 20px;
 }
 
 .noticia {
@@ -95,7 +94,8 @@ p {
 }
 
 .text-noticia {
-	font-size: 15px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 13px;
 	text-align:justify;
 	margin-left: 20px;
 	margin-right: 20px;
@@ -126,7 +126,7 @@ p {
 	text-transform: uppercase;
 	color: white;
 	margin-left: 65px;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: bold;
 }
 
@@ -174,6 +174,7 @@ p {
 	width: 100px;
 	margin-left: 305px;
 	margin-top: -5px;
+	font-size: 16px;
 }
 
 
@@ -388,37 +389,56 @@ p {
 
 /* Dades usuari */ 
 
-.caixa_profile {
+.caixa_profile {	
 	background-image: url(../images/caixa_profile.png);  
-	background-repeat:no-repeat;	
+	background-repeat:no-repeat;
+	background-position: center left;	
+	padding-left: 10px;
+	margin-top: 10px;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;	
+}
+
+.caixa_profile_top {
+	background-image: url(../images/top_caixa_profile.png);
+	background-repeat: no-repeat;
+	background-position: top left;
 	margin-top: 20px;
+	background-size: 100%;
 }
 
 .imatge-nen {
-	margin-left: 10px;
-	margin-top: 10px;
+	margin-left: 10px;		
 }
 
 .dades-nen {
 	margin-left: 0px !important;
-	width: auto !important;
-}
+	width: auto !important;		
+}	
 
 .negreta {
 	font-weight: bold;
+}
+
+.menu {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 13px;
 }
 
 ul.dades {
 	list-style-type: none !important;	
 	vertical-align: bottom;
 	margin-left: 10px;
-	margin-top: 10px;
-	color: white;
+	margin-top: 0px;
+	color: white;	
 }
 
 ul.dades li {
 	line-height: 25px;
 }
+
 
 ul.dades li a {
 	color: white;
@@ -617,6 +637,11 @@ ul.dades li a {
 	background-color: #FF6633;	
 }
 
+.nav-tabs.nav-stacked {
+	border-bottom: 0;
+	font-weight: bold;
+}
+
 .nav-tabs.nav-stacked.nav-dreta  > li > a {
 	color:white
 }
@@ -679,7 +704,8 @@ ul.dades li a {
 
 .text-noticia-actualitat {
 	color: white;
-	font-size: 15px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 13px;	
 }
 
 .noticia-sense-imatge1 {
@@ -727,7 +753,7 @@ ul.dades li a {
  	background-image: url(../images/caixa2.png);  
    	background-repeat:no-repeat;
    	height: auto;
-   	padding-top: 20px;
+   	padding-top: 15px;
    	min-height: 150px;
 }
 
@@ -757,12 +783,13 @@ ul.dades li a {
 .curs p {
 	color: white;	
 	margin-left: 10px;
-	font-size: 15px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 13px;
 }
 
 .profesor {
 	margin-bottom: 0px; 
-	margin-top: 20px;
+	margin-top: 20px;	
 }
 
 a.boto-curs { 
@@ -815,8 +842,9 @@ ul.topics li.active .span12 {
 	color: #FF6633;	
 }
 
-.text-apartat-curs {
-	font-size: 15px;
+.text-apartat-curs {	
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 13px;
 }
 
 .info-general ul li,  .info-projecte ul li {
@@ -824,8 +852,9 @@ ul.topics li.active .span12 {
 }
 
 .info-general ul, .info-projecte ul{
-	margin-left: 0px;
-	font-size: 15px;
+	margin-left: 0px;	
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 13px;
 }
 
 .info-general ul li a, .info-projecte ul li a {
@@ -893,15 +922,7 @@ ul.topics li.active .span12 {
 	color: #FF6633 !important;
 }
 
-#maxui-container {
-	text-shadow: 0 1px #fff; 
-	font-size: 13px !important;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: normal;
-	line-height: 18px !important;	
-	font-family:'Waiting for the Sunrise', cursive !important;
-	color:#333;}
+
 
 #maxui-container a {
 	text-decoration: none;
@@ -996,5 +1017,18 @@ input.maxui-button {
 .links-institucionals ul {
 	list-style-type: none;	
 	margin-left: 0px;
-	font-size: 13px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 13px;	
+}
+
+.links-institucionals ul {
+	li{
+		a{
+			color: #666666;
+		}
+	}
+}
+
+.nav-collapse .nav > li > a:hover, .nav-collapse .nav > li > a:focus, .nav-collapse .dropdown-menu a:hover, .nav-collapse .dropdown-menu a:focus {
+background-color: transparent;
 }
